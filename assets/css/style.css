@@ -1,0 +1,26 @@
+#header {
+    font-weight: bold;
+    color: azure;
+    text-shadow: 2px 2px black;
+}
+
+.searchCityWrapper {
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    
+}
+
+.container {
+    flex-wrap: nowrap;
+} 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}

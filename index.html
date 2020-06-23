@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-light">
+
+    <header class="row">
+        <section class="col bg-dark">
+                <h2 id="header" class="p-3">Weather Dashboard</h2> 
+        </section>
+    </header>
+
+    <div class="container">
+        <section id="searchCity" class="row justify-content-center my-3">        
+                <!-- search col -->
+            <div id="searchBar" class="col">
+                <div class="pull-left dropdown">
+                    <span rel="localize[tabs.workflows]">&nbsp;</span>
+                    <a id="show-search-history" class="" data-toggle="dropdown" href="#"></i> </a>
+                    <ul id="search-list" class="dropdown-menu search-list-menu" >
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <label class="" for=""><strong>Search for a City</strong></label>
+                    <form class="input-group" action="" method="">
+                        <div class="input-group-prepend">
+                            <input id="search" class="form-control form-control-sm" type="search" placeholder="Search">
+                        </div>
+                        <button id="runSearch" class="btn btn-dark btn-sm" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+                
+        </section>
+        </section class="row my-3">
+            <div id="currentWeather" class="col">
+                <h3>Local Weather</h3>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h4 id="currentCity">Los Angeles</h4>
+                        <h5 id="currentDate">6/21/20</h5>
+                        <i class="currentWeatherIcon"></i>
+                        <p class="card-text"><strong>Tempurature:</strong> <span id="currentTemp">78</span>°</p>
+                        <p class="card-text"><strong>Humidity:</strong> <span id="currentHumidity">30</span>%</p>
+                        <p class="card-text"><strong>Wind Speed:</strong> <span id="currentWindSpeed">3.0</span> MPH</p>
+                        <p class="card-text"><strong>UV Index:</strong> <mark id="UVindexWarning"><span id="UVindex">9.05</span></mark></p> 
+                    </div>
+                </div>
+            </div>
+        </section>    
+            
+        <section class="row my-3">
+            <div class="col-12">
+                <h3>5 Day Forecast</h3>
+                <div class="card-deck">     
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 id="dateDay1" class="card-title">6/22/20</h5>
+                            <p><i class="card-text iconDay">O</i></p>
+                            <p class="card-text">Tempurature: <span id="tempDay1">78</span>°</p>
+                            <p class="card-text">Humidity: <span id="humidityDay1">30</span>%</p>
+                        </div>
+                    </div>
+            
+            
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 id="dateDay2" class="card-title">6/23/20</h5>
+                            <p><i class="card-text iconDay">O</i></p>
+                            <p class="card-text">Tempurature: <span id="tempDay2">78</span>°</p>
+                            <p class="card-text">Humidity: <span id="humidityDay2">30</span>%</p>
+                        </div>
+                    </div>
+        
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 id="dateDay3" class="card-title">6/23/20</h5>
+                            <p><i class="card-text iconDay">O</i></p>
+                            <p class="card-text">Tempurature: <span id="tempDay3">78</span>°</p>
+                             <p class="card-text">Humidity: <span id="humidityDay3">30</span>%</p>
+                        </div>
+                    </div>
+        
+                    
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 id="dateDay4" class="card-title">6/23/20</h5>
+                            <p><i class="card-text iconDay">O</i></p>
+                            <p class="card-text">Tempurature: <span id="tempDay4">78</span>°</p>
+                            <p class="card-text">Humidity: <span id="humidityDay4">30</span>%</p>
+                        </div>
+                    </div>
+        
+            
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 id="dateDay5" class="card-title">6/23/20</h5>
+                            <p><i class="card-text iconDay">O</i></p>
+                            <p class="card-text">Tempurature: <span id="tempDay5">78</span>°</p>
+                            <p class="card-text">Humidity: <span id="humidityDay5">30</span>%</p>
+                        </div>
+                    </div>
+                </div>          
+            </div> 
+        </section>
+    </div> 
+
+
+                    
+                   
+        
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>                                
+</body>
+</html>     
+
+
+
+
+
